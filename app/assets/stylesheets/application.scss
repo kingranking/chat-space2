@@ -1,0 +1,65 @@
+@import "reset";
+@import "modules/messages";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.side-bar {
+  width: 300px;
+  background-color: #2f3e51;
+  &__header {
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+    &__box {
+      height: 20px;
+      margin: 0 20px;
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+      &__user-name {
+        line-height: 20px;
+      }
+      &__menu {
+        width: 60px;
+        text-align: right;
+        line-height: 20px;
+        &__new-group {
+          color: #ffffff;
+          margin-right: 5px;
+          text-decoration: none;
+        }
+        &__edit-user {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__groups {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+  }
+}
+
+.chat-main {
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  &__header {
+    height: 100px;
+    background-color: #ffffff;
+  }
+  &__messages {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+  }
+  &__form {
+    height: 90px;
+    background-color: #d2d2d2;
+  }
+}
