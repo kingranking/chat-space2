@@ -102,6 +102,26 @@
   &__messages {
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    padding: 35px 0 0 40px;
+    &__box {
+      margin-bottom: 46px;
+      &__info {
+        display: flex;
+        margin-bottom: 12px;
+        &__name {
+          color: #333333;
+          font-size: 16px;
+        }
+        &__date-time {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      &__message {
+        color: #434a54;
+        font-size: 14px;
+      }
+    }
   }
   &__form {
     height: 90px;
