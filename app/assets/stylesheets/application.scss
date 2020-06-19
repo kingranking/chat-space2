@@ -126,10 +126,46 @@
   &__form {
     height: 90px;
     background-color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    &__contents {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      position: relative;
+      &__image-input {
+        position: absolute;
+        right: 10px;
+        line-height: 50px;
+      }
+    }
+    &__submit {
+      margin-left: 15px;
+    }
   }
 }
 
 a {
   text-decoration: none;
   color: #38aef0;
+}
+
+.form__submit {
+  height: 50px;
+  padding: 0 30px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #38aef0;
+  border: none;
+}
+
+.message {
+  width: 100%;
+  border: none;
+  padding: 0 10px;
+}
+
+.hidden {
+  display: none;
 }

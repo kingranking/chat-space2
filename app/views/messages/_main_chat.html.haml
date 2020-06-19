@@ -26,3 +26,11 @@
       .chat-main__messages__box__messaage
         今日は夜から雨
   .chat-main__form
+    .chat-main__form__contents
+      %input{type:"text", placeholder:"type a messaaage", class:"message"}
+      .chat-main__form__contents__image-input
+        %label{class: "image-input"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "hidden"}
+    .chat-main__form__submit
+      %input{type: "submit", value: "Send", class:"form__submit"}
