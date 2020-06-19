@@ -1,0 +1,61 @@
+.wrapper {
+  @include flex();
+  height: 100vh;
+}
+
+.side-bar {
+  width: 300px;
+  @include section-background-color2();
+  &__header {
+    height: 100px;
+    background-color: #253141;
+    @include flex();
+    @include align();
+    &__box {
+      height: 20px;
+      margin: 0 20px;
+      width: 260px;
+      @include flex();
+      justify-content: space-between;
+      &__user-name {
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        @include color();
+      }
+      &__menu {
+        width: 60px;
+        text-align: right;
+        line-height: 20px;
+        &__new-group {
+          @include color();
+          margin-right: 5px;
+          text-decoration: none;
+        }
+        &__edit-user {
+          @include color();
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__groups {
+    @include section-background-color2();
+    height: calc(100% - 100px);
+    padding: 0 20px;
+    &__group {
+      padding: 20px 0 40px;
+      &__name {
+        font-size: 15px;
+        font-weight: bold;
+        @include color();
+        margin-bottom: 5px;
+      }
+      &__message {
+        font-size: 11px;
+        font-weight: bold;
+        @include color();
+      }
+    }
+  }
+}

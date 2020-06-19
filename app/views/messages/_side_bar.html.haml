@@ -1,0 +1,16 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      .side-bar__header__box__user-name
+        masa
+      .side-bar__header__box__menu
+        = link_to "#", class: "side-bar__header__box__menu__new-group" do
+          =icon("far", "fa-edit")
+        = link_to "#", class: "side-bar__header__box__menu__edit-user" do
+          =icon("fas", "fa-cog")
+  .side-bar__groups
+    .side-bar__groups__group
+      .side-bar__groups__group__name
+        techcamp
+      .side-bar__groups__group__message
+        まだメッセージがありません
