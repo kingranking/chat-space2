@@ -1,46 +1,48 @@
+@import "variiables";
+
 .wrapper {
-  display: flex;
+  @include flex();
   height: 100vh;
 }
 
 .side-bar {
   width: 300px;
-  background-color: #2f3e51;
+  @include section-background-color2();
   &__header {
     height: 100px;
     background-color: #253141;
-    display: flex;
-    align-items: center;
+    @include flex();
+    @include align();
     &__box {
       height: 20px;
       margin: 0 20px;
       width: 260px;
-      display: flex;
+      @include flex();
       justify-content: space-between;
       &__user-name {
         line-height: 20px;
         font-size: 16px;
         font-weight: bold;
-        color: #ffffff;
+        @include color();
       }
       &__menu {
         width: 60px;
         text-align: right;
         line-height: 20px;
         &__new-group {
-          color: #ffffff;
+          @include color();
           margin-right: 5px;
           text-decoration: none;
         }
         &__edit-user {
-          color: #ffffff;
+          @include color();
           text-decoration: none;
         }
       }
     }
   }
   &__groups {
-    background-color: #2f3e51;
+    @include section-background-color2();
     height: calc(100% - 100px);
     padding: 0 20px;
     &__group {
@@ -48,13 +50,13 @@
       &__name {
         font-size: 15px;
         font-weight: bold;
-        color: #ffffff;
+        @include color();
         margin-bottom: 5px;
       }
       &__message {
         font-size: 11px;
         font-weight: bold;
-        color: #ffffff;
+        @include color();
       }
     }
   }

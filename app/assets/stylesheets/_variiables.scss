@@ -1,0 +1,39 @@
+@mixin section-background-color() {
+  background-color: #ffffff;
+}
+
+@mixin section-background-color2() {
+  background-color: #2f3e51;
+}
+
+@mixin flex() {
+  display: flex;
+}
+ 
+@mixin height() {
+  height: 50px;
+}
+
+@mixin width() {
+  width: 100%;
+}
+
+@mixin border() {
+  border: none;
+}
+
+@mixin color() {
+  color: #ffffff;
+}
+
+@mixin align() {
+  align-items: center;
+}
+
+$section-color: #999999; 
+
+$section-color2: #333333;
+
+$section-color3: #38aef0;
+
+$section-color4: #ffffff;
