@@ -27,6 +27,7 @@
         width: 60px;
         text-align: right;
         line-height: 20px;
+        display: flex;
         &__new-group {
           @include color();
           margin-right: 5px;
@@ -58,4 +59,8 @@
       }
     }
   }
+}
+
+.bnt {
+  color: #ffffff;
 }
