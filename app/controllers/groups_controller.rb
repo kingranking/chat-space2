@@ -24,7 +24,7 @@ class GroupsController < ApplicationController
   def update
     @group = Group.find(params[:id])
     if @group = Group.find(params[:id])
-      redirect_to root_path, notice: "グループを更新しました"
+      redirect_to group_messages_path(@group[:id]), notice: "グループを更新しました"
     else
       render :edit
     end
@@ -35,3 +35,4 @@ class GroupsController < ApplicationController
     params.require(:group).permit(:name, user_ids: [])
   end
 end
+

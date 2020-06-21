@@ -56,12 +56,17 @@
       }
     }
   }
+
   &__form {
     height: 90px;
     background-color: #d2d2d2;
     @include flex();
     @include align();
     padding: 0 40px;
+    .Form{
+      width:100%;
+      display: flex;
+    }
     &__contents {
       @include width();
       @include height();
