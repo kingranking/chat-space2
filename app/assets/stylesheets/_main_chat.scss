@@ -1,5 +1,6 @@
 .chat-main {
   width: calc(100vw - 300px);
+  height: 100vh;
   @include section-background-color();
   &__header {
     height: 100px;

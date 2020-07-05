@@ -1,11 +1,11 @@
 .wrapper {
   @include flex();
-  height: 100vh;
 }
 
 .side-bar {
   width: 300px;
   @include section-background-color2();
+  height: 100vh;
   &__header {
     height: 100px;
     background-color: #253141;
@@ -42,7 +42,7 @@
   }
   &__groups {
     @include section-background-color2();
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     padding: 0 20px;
     &__group {
       padding: 20px 0 40px;
