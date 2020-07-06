@@ -2,36 +2,36 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="MessageBox" data-message-id=${message.id}>
-          <div class="MessageInfo">
-            <div class="MessageInfo__userName">
+        `<div class="chat-main__messages__box" data-message-id=${message.id}>
+          <div class="chat-main__messages__box__info">
+            <div class="chat-main__messages__box__info__name">
               ${message.user_name}
             </div>
-            <div class="MessageInfo__date">
+            <div class="chat-main__messages__box__info__date-time">
               ${message.created_at}
             </div>
           </div>
-          <div class="Message">
-            <p class="Message__content">
+          <div class="chat-main__messages__box__messaage">
+            <p class="chat-main__messages__box__messaage__content">
               ${message.content}
             </p>
-            <img class="Message__image" src="${message.image}">
+            <img class="chat-main__messages__box__messaage__image" src="${message.image}">
           </div>
         </div>`
       return html;
     } else {
       let html =
-      `<div class="MessageBox" data-message-id=${message.id}>
-        <div class="MessageInfo">
-          <div class="MessageInfo__userName">
+      `<div class="chat-main__messages__box" data-message-id=${message.id}>
+        <div class="chat-main__messages__box__info">
+          <div class="chat-main__messages__box__info__name">
             ${message.user_name}
           </div>
-          <div class="MessageInfo__date">
+          <div class="chat-main__messages__box__info__date-time">
             ${message.created_at}
           </div>
         </div>
-        <div class="Message">
-          <p class="Message__content">
+        <div class="chat-main__messages__box__messaage">
+          <p class="chat-main__messages__box__messaage__content">
             ${message.content}
           </p>
         </div>
