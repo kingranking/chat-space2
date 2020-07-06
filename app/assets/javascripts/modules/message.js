@@ -15,7 +15,7 @@ $(function(){
             <p class="chat-main__messages__box__messaage__content">
               ${message.content}
             </p>
-            <img class="chat-main__messages__box__messaage__image" src="${message.image}>
+            <img class="chat-main__messages__box__messaage__image" src="${message.image}">
           </div>
         </div>`
       return html;
@@ -53,6 +53,7 @@ $(function(){
       contentType: false
     })
     .done(function(data){
+      console.log(data)
       let html = buildHTML(data);
       $('.chat-main__messages').append(html);
       $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
