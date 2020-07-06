@@ -4,7 +4,7 @@
       .chat-main__header__leftbox__current-group
         = @group.name
       .chat-main__header__leftbox__member
-        = "メンバー："
+        メンバー：
         - @group.users.each do |user|
           = user.name
         
